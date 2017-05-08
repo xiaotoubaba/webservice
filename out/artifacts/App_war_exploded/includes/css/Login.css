@@ -1,0 +1,73 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#page_bg{
+	width: 100%;
+	height: 100%;
+}
+#dialog{
+	border-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-o-border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-o-border-top-right-radius: 10p
+}
+#dialog_head{
+	background: red;
+	opacity:0.5;
+	width: 100%;
+	height: 15%;
+	border-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-o-border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-o-border-top-right-radius: 10p;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+}
+p{
+	padding-top: 10px;	
+}
+#dialog_from{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 5%;
+}
+#dialog_username{
+	width: 90%;
+}
+#dialog_password{
+	width: 90%;
+}
+#dialog_vilidate{
+	width: 70%;
+}
+#dialog_submit{
+	width: 90%;
+	height: 10%;
+	position: absolute;
+	top: 55%;
+	
+}
+#submit{
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+}
+#dialog_footer{
+	position: absolute;
+	top:90%;
+	left: 28%;
+	color: white;
+}
