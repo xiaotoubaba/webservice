@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a2f689-3d7c-4d4f-81b2-c779c3d80cd9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/includes/images/qrcode.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/includes/images/qrcode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/includes/images/qrcode_small.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/App_war_exploded/includes/css/Login.css" afterPath="$PROJECT_DIR$/out/artifacts/App_war_exploded/includes/css/Login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/App_war_exploded/login.html" afterPath="$PROJECT_DIR$/out/artifacts/App_war_exploded/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/app/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/com/app/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/App_war_exploded/whale/whale.html" afterPath="$PROJECT_DIR$/out/artifacts/App_war_exploded/whale/whale.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/includes/css/Login.css" afterPath="$PROJECT_DIR$/web/includes/css/Login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.html" afterPath="$PROJECT_DIR$/web/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/spider/spider.html" afterPath="$PROJECT_DIR$/web/spider/spider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/whale/whale.html" afterPath="$PROJECT_DIR$/web/whale/whale.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,20 +35,38 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+            <state relative-caret-position="198">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/includes/css/Login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="90" column="44" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="90" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrcode.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/includes/images/qrcode.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="88">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -63,12 +82,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="whale.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="whale.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/whale/whale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="352">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="whale.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/whale/whale.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1494212278000" expanded="true" signature="80262:80354" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,6 +127,7 @@
       <find>btn btn-info</find>
       <find>submit</find>
       <find>dialog_head</find>
+      <find>ce</find>
       <find>dialog_submit</find>
     </findStrings>
   </component>
@@ -130,12 +162,13 @@
         <option value="$PROJECT_DIR$/src/app_config.txt" />
         <option value="$PROJECT_DIR$/web/login/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/web/login/login.html" />
+        <option value="$PROJECT_DIR$/src/com/app/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/web/spider/spider.html" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/includes/css/Login.css" />
-        <option value="$PROJECT_DIR$/src/com/app/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/web/whale/whale.html" />
-        <option value="$PROJECT_DIR$/web/spider/spider.html" />
         <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/web/whale/whale.css" />
+        <option value="$PROJECT_DIR$/web/whale/whale.html" />
       </list>
     </option>
   </component>
@@ -153,7 +186,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="42" />
     <option name="y" value="23" />
     <option name="width" value="1392" />
     <option name="height" value="876" />
@@ -236,7 +269,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,11 +369,11 @@
       <recent name="$PROJECT_DIR$/web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/whale" />
+      <recent name="$PROJECT_DIR$/web/includes/images" />
       <recent name="$PROJECT_DIR$/web/login" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src/com/app/util" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/include" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Water-文森特">
@@ -869,15 +946,15 @@
       <updated>1493967711786</updated>
       <workItem from="1493967713927" duration="6763000" />
       <workItem from="1494210901453" duration="12657000" />
-      <workItem from="1494310917433" duration="4347000" />
+      <workItem from="1494310917433" duration="7063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23767000" />
+    <option name="totallyTimeSpent" value="26483000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="23" width="1392" height="876" extended-state="0" />
+    <frame x="42" y="23" width="1392" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -956,18 +1033,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web/login.html</url>
-          <line>71</line>
+          <line>77</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web/login.html</url>
-          <line>53</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web/login.html</url>
-          <line>77</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
@@ -981,10 +1058,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/hello.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index/index.html" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/html/login.html" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/html/hello.html" />
     <entry file="file://$PROJECT_DIR$/src/com/app/controller/HelloController.java" />
     <entry file="file://$PROJECT_DIR$/src/com/app/controller/IndexController.java" />
@@ -1069,13 +1142,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/butter/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/whale/whale.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1236,14 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/includes/css/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/app/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1251,14 +1309,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/whale/whale.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,20 +1320,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="86" column="39" lean-forward="true" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/includes/images/qrcode_small.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/includes/images/qrcode.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="88">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/whale/whale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1494212278000" expanded="true" signature="80262:80354" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/whale/whale.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="53" lean-forward="false" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/includes/images/qrcode.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/includes/css/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="90" column="44" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="90" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/whale/whale.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>

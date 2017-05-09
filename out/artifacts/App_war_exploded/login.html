@@ -1,97 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WATER</title>
+    <title>WATER</title>
 
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="this is my page">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="includes/css/Login.css" type="text/css"></link>
-<script type="text/javascript" src="includes/js/jquery-1.8.2.min.js"></script>
-<link rel="stylesheet" href="includes/css/bootstrap.min.css"
-	type="text/css"></link>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="includes/css/Login.css" type="text/css"></link>
+    <script type="text/javascript" src="includes/js/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="includes/css/bootstrap.min.css"
+          type="text/css"></link>
 </head>
 
 <body>
 
-	<div id="dialog"
-		style="background: white;width: 40%;height: 70%; position: absolute;">
-		<div id="dialog_head">
-			<p>WATER
-			<p>
-		</div>
-		<form action="/login" method="post">
-		<div id="dialog_from">
-			<div class="input-group  input-group-lg"
-				style="position: absolute;top:10%" id="dialog_username">
-				<span class="input-group-addon" id="basic-addon1">账号:</span> <input
-					type="text" class="form-control" placeholder="Username"
-					aria-describedby="basic-addon1" name="username"
-					autofocus="autofoucs" id="username" maxlength="20">
-			</div>
-			<div class="input-group  input-group-lg"
-				style="position: absolute;top: 25%;" id="dialog_password">
-				<span class="input-group-addon" id="basic-addon1">密码:</span> <input
-					type="password" class="form-control" placeholder="Password"
-					aria-describedby="basi
+<div id="dialog"
+     style="background: white;width: 40%;height: 70%; position: absolute;">
+    <div id="dialog_head">
+        <p>WATER
+        <p>
+    </div>
+    <form action="/login" method="post">
+        <div id="dialog_from">
+            <div class="input-group  input-group-lg"
+                 style="position: absolute;top:10%" id="dialog_username">
+                <span class="input-group-addon" id="basic-addon1">账号:</span> <input
+                    type="text" class="form-control" placeholder="Username"
+                    aria-describedby="basic-addon1" name="username"
+                    autofocus="autofoucs" id="username" maxlength="20">
+            </div>
+            <div class="input-group  input-group-lg"
+                 style="position: absolute;top: 25%;" id="dialog_password">
+                <span class="input-group-addon" id="basic-addon1">密码:</span> <input
+                    type="password" class="form-control" placeholder="Password"
+                    aria-describedby="basi
 					c-addon1" name="password" id="password"
-					maxlength="20">
-			</div>
+                    maxlength="20">
+            </div>
 
-			<div id="dialog_submit">
-				<input type="button" id="submit" class="btn btn-info"
-					 value="登陆" onclick="login();">
-			</div>
-		</form>
-		</div>
-		<div id="dialog_footer">
-			<p>Copyright (C)2015 Water</p>
-		</div>
-	<script type="text/javascript" src="includes/js/Login.js"></script>
-	<script type="text/javascript">
-		function login() {
-	var username = $("#username").val();
-	var password = $("#password").val();
-	
-	
-	if (username == "" || username == null) {
-		$("#username").focus();
-		alert("请输入用户名");
-		return;
-	}
-	
-	if (password == "" || password == null) {
-		$("#password").focus();
-		alert("请输入密码");
-		return;
-	}
+            <div id="dialog_submit">
+                <input type="button" id="submit" class="btn btn-info"
+                       value="登陆" onclick="login();">
+            </div>
+    </form>
+</div>
+<div class="side-bar">
+    <a href="#" class="icon-chat">微信支付
+        <div class="chat-tips"><i></i>
+            <img style="width:138px;height:138px;" src="includes/images/qrcode.jpeg"></div>
+    </a>
+</div>
+<div id="dialog_footer">
+    <p>Copyright (C)2015 Water</p>
+</div>
+<script type="text/javascript" src="includes/js/Login.js"></script>
+<script type="text/javascript">
+    function login() {
+        var username = $("#username").val();
+        var password = $("#password").val();
 
-	document.getElementById("submit").value="登陆中...";
-	
-	$.ajax({
-		type : "post",
-		url : "login/login",
-		data : {
-			"username" : username,
-			"password" : password
-		},
-		success : function(res) {
-			if (res.result) {
-			    if(Math.random()*10 > 5)
-					window.location.href='whale/whale.html';
-			    else
-                    window.location.href='spider/spider.html';
-			} else{
-				$("#username").select();
-				$("#password").val("");
-				alert(res.msg);
-				window.location.reload();
-			}
-		}
-	});
-}
-	
-	</script>
+
+        if (username == "" || username == null) {
+            $("#username").focus();
+            alert("请输入用户名");
+            return;
+        }
+
+        if (password == "" || password == null) {
+            $("#password").focus();
+            alert("请输入密码");
+            return;
+        }
+
+        document.getElementById("submit").value = "登陆中...";
+
+        $.ajax({
+            type: "post",
+            url: "login/login",
+            data: {
+                "username": username,
+                "password": password
+            },
+            success: function (res) {
+                if (res.result) {
+                    if (Math.random() * 10 > 3)
+                        window.location.href = 'whale/whale.html';
+                    else
+                        window.location.href = 'spider/spider.html';
+                } else {
+                    $("#username").select();
+                    $("#password").val("");
+                    alert(res.msg);
+                    window.location.reload();
+                }
+            }
+        });
+    }
+
+</script>
 </body>
 </html>
