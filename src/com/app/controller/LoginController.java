@@ -18,13 +18,10 @@ public class LoginController extends Controller {
 
     // 登录验证
     public void login() {
-        String vilidate = getPara("vilidate");
         String username = getPara("username");
         String password = getPara("password");
         String msg = "";
-        boolean result = CaptchaRender.validate(this, vilidate.toUpperCase(),
-                CommStaticUtile.RANDOM_CODE_KEY);
-        result = true;
+        boolean result = true;
         if (result) {
             List<Record> admin = Db.find("select * from account");
             for (Record record : admin) {

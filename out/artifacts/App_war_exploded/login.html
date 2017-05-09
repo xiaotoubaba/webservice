@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>校园信息管理系统</title>
+<title>WATER</title>
 
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="this is my page">
@@ -14,12 +14,11 @@
 </head>
 
 <body>
-	<div id="page_bg"
-		style="background: url(includes/images/1.jpg) 0px 0px;"></div>
+
 	<div id="dialog"
-		style="background: #23232e;width: 40%;height: 70%; position: absolute;">
+		style="background: white;width: 40%;height: 70%; position: absolute;">
 		<div id="dialog_head">
-			<p>Water君
+			<p>WATER
 			<p>
 		</div>
 		<form action="/login" method="post">
@@ -40,15 +39,6 @@
 					maxlength="20">
 			</div>
 
-			<div class="input-group  input-group-lg"
-				style="position: absolute;top: 40%;" id="dialog_vilidate">
-				<span class="input-group-addon" id="basic-addon1">验证码:</span> <input
-					type="text" class="form-control" placeholder="VilidateCode"
-					aria-describedby="basic-addon1" name="vilidate" id="vilidate"
-					maxlength="20" onkeyup=" if(event.keyCode==13)login(); "> <img alt="验证码" src="img"
-					style="position: absolute;left: 100%; width: 28%;height: 100%;" >
-			</div>
-
 			<div id="dialog_submit">
 				<input type="button" id="submit" class="btn btn-info"
 					 value="登陆" onclick="login();">
@@ -63,7 +53,6 @@
 		function login() {
 	var username = $("#username").val();
 	var password = $("#password").val();
-	var vilidate = $("#vilidate").val();
 	
 	
 	if (username == "" || username == null) {
@@ -77,11 +66,7 @@
 		alert("请输入密码");
 		return;
 	}
-	
-	if(vilidate == "" || vilidate == null){
-		$("#vilidate").focus();
-		return;
-	}
+
 	document.getElementById("submit").value="登陆中...";
 	
 	$.ajax({
@@ -89,12 +74,14 @@
 		url : "login/login",
 		data : {
 			"username" : username,
-			"password" : password,
-			"vilidate" : vilidate
+			"password" : password
 		},
 		success : function(res) {
 			if (res.result) {
-				window.location.href='whale/whale.html';
+			    if(Math.random()*10 > 5)
+					window.location.href='whale/whale.html';
+			    else
+                    window.location.href='spider/spider.html';
 			} else{
 				$("#username").select();
 				$("#password").val("");
