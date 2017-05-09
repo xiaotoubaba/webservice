@@ -1,6 +1,7 @@
 package com.app.config;
 
 import com.app.controller.LoginController;
+import com.app.controller.RegisterController;
 import com.app.controller.UserController;
 import com.app.model.User;
 import com.jfinal.config.*;
@@ -28,6 +29,7 @@ public class AppConfig extends JFinalConfig {
     @Override
     public void configRoute(Routes me) {
         me.add("/login", LoginController.class);
+        me.add("/register", RegisterController.class);
     }
 
     @Override

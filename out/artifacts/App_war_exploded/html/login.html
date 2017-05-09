@@ -7,9 +7,9 @@
     <meta http-equiv="description" content="this is my page">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="includes/css/Login.css" type="text/css"></link>
-    <script type="text/javascript" src="includes/js/jquery-1.8.2.min.js"></script>
-    <link rel="stylesheet" href="includes/css/bootstrap.min.css"
+    <link rel="stylesheet" href="../css/Login.css" type="text/css"></link>
+    <script type="text/javascript" src="../includes/js/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="../includes/css/bootstrap.min.css"
           type="text/css"></link>
 </head>
 
@@ -43,18 +43,22 @@
                 <input type="button" id="submit" class="btn btn-info"
                        value="登陆" onclick="login();">
             </div>
+
+            <div id="dialog_reg">
+                <a id= "reg" href="register.html">注册</a>
+            </div>
     </form>
 </div>
 <div class="side-bar">
     <a href="#" class="icon-chat">微信支付
         <div class="chat-tips"><i></i>
-            <img style="width:138px;height:138px;" src="includes/images/qrcode.jpeg"></div>
+            <img style="width:138px;height:138px;" src="../includes/images/qrcode.jpeg"></div>
     </a>
 </div>
 <div id="dialog_footer">
     <p>Copyright (C)2015 Water</p>
 </div>
-<script type="text/javascript" src="includes/js/Login.js"></script>
+<script type="text/javascript" src="../js/Login.js"></script>
 <script type="text/javascript">
     function login() {
         var username = $("#username").val();
@@ -77,7 +81,7 @@
 
         $.ajax({
             type: "post",
-            url: "login/login",
+            url: "../login/login",
             data: {
                 "username": username,
                 "password": password
@@ -85,9 +89,9 @@
             success: function (res) {
                 if (res.result) {
                     if (Math.random() * 10 > 3)
-                        window.location.href = 'whale/whale.html';
+                        window.location.href = 'whale.html';
                     else
-                        window.location.href = 'spider/spider.html';
+                        window.location.href = 'spider.html';
                 } else {
                     $("#username").select();
                     $("#password").val("");

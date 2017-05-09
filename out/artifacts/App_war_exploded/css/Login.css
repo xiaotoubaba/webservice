@@ -1,0 +1,107 @@
+body{
+	height: 70%;
+	width: 80%;
+	margin: 0px;
+	padding: 0px;
+}
+#dialog_qrcode{
+	position: absolute;
+	top:35%;
+	float: right;
+}
+#page_bg{
+	width: 100%;
+	height: 100%;
+}
+#dialog{
+	border-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-o-border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-o-border-top-right-radius: 10p
+}
+#dialog_head{
+	background: white;
+	opacity:1;
+	width: 100%;
+	height: 10%;
+	border-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-o-border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-o-border-top-right-radius: 10p;
+	font-size: 25px;
+	color: gray;
+	text-align: center;
+}
+p{
+	padding-top: 10px;	
+}
+#dialog_from{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 5%;
+}
+#dialog_username{
+	width: 90%;
+}
+#dialog_password{
+	width: 90%;
+}
+
+#dialog_submit{
+	width: 90%;
+	height: 9%;
+	position: absolute;
+	top: 40%;
+
+}
+#submit{
+	background: white;
+	width: 100%;
+	height: 100%;
+	font-size: 21px;
+	color: gray;
+}
+
+#dialog_reg{
+	width: 90%;
+	height: 7%;
+	position: absolute;
+	top: 52%;
+	left: 75%;
+}
+
+#reg{
+	background: white;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	color: blue;
+}
+
+#dialog_footer{
+	position: absolute;
+	top:105%;
+	left: 35%;
+	color: gray;
+}
+
+
+.side-bar a,.chat-tips i {background: url(../includes/images/qrcode_small.jpeg) no-repeat;}
+.side-bar {width: 66px;position: fixed; bottom: 350px;right: 35px;font-size: 0;line-height: 0;z-index: 100;}
+.side-bar a {width: 66px;height: 66px;display: inline-block;background-color: #ddd;margin-bottom: 2px;}
+.side-bar a:hover {background-color: #669fdd;}
+.side-bar .icon-chat {background-position: 0px;position: relative;}
+
+.side-bar .icon-chat:hover .chat-tips {display: block;}
+.chat-tips {padding: 20px;border: 1px solid #d1d2d6;position: absolute;right: 78px;top: -55px;background-color: #fff;display: none;}
+.chat-tips i {width: 9px;height: 16px;display: inline-block;position: absolute;right: -9px;top: 80px;background-position:-88px -350px;}
+.chat-tips img {width: 138px;height: 138px;}

@@ -21,32 +21,27 @@ public class LoginController extends Controller {
         String username = getPara("username");
         String password = getPara("password");
         String msg = "";
-        boolean result = true;
-        if (result) {
-            List<Record> admin = Db.find("select * from account");
-            for (Record record : admin) {
-                if (record.getStr("username").equals(username.trim())
-                        && record.getStr("password").equals(password.trim())) {
-                    setSessionAttr(CommStaticUtile.USER_NAME,
-                            record.getStr("username"));
-                    setSessionAttr(CommStaticUtile.PASS_WORD,
-                            record.getStr("password"));
-                    setSessionAttr(CommStaticUtile.ADMIN_IP, record.getStr("id"));
-                    String adminIp = CommonUtils.getRemoteLoginUserIp(getRequest());
-                    record.set("old_ip", record.get("ip")).set("old_date", record.getTimestamp("old_date"));
-                    record.set("ip", adminIp).set("date", new Timestamp(new Date().getTime()));
-                    Db.update("account", record);
-                } else {
-                    msg = "账号或密码错误！";
-                    result = false;
-                }
-            }
+        boolean result = false;
+        if (checkLogin(username, password)) {
+            result = true;
         } else {
-            msg = "验证码错误";
+            msg = "账号或密码错误！";
+            result = false;
         }
         setAttr("result", result);
         setAttr("msg", msg);
         renderJson();
     }
 
+    private boolean checkLogin(String username, String password) {
+        List<Record> admin = Db.find("select * from user");
+        for (Record record : admin) {
+            if (record.getStr("username").equals(username.trim())
+                    && record.getStr("password").equals(password.trim())) {
+                return true;
+            }
+
+        }
+        return false;
+    }
 }
