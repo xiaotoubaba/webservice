@@ -1,14 +1,15 @@
 package com.app.controller;
 
-import com.app.util.CommStaticUtile;
-import com.app.util.CommonUtils;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import com.app.application.entity.ErrMsg;
+import com.app.application.res.Response;
+import com.app.request.req.LoginReq;
+import com.app.request.res.LoginRes;
 import com.jfinal.core.Controller;
-import com.jfinal.ext.render.CaptchaRender;
+import com.jfinal.kit.HttpKit;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
-
-import java.sql.Timestamp;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -18,20 +19,24 @@ public class LoginController extends Controller {
 
     // 登录验证
     public void login() {
-        String username = getPara("username");
-        String password = getPara("password");
-        String msg = "";
-        boolean result = false;
-        if (checkLogin(username, password)) {
-            result = true;
+        LoginReq req = JSON.parseObject(HttpKit.readData(getRequest()), new TypeReference<LoginReq>(){});
+        Response<LoginRes> response = new Response();
+        if (checkLogin(req.getUsername(), req.getPassword())) {
+
+            response.setRt(ErrMsg.SUCC_CODE);
+            response.setErrmsg(ErrMsg.SUCC);
+            LoginRes res = new LoginRes();
+            res.setUsername(req.getUsername());
+            res.setPassword(req.getPassword());
+            response.setParam(res);
         } else {
-            msg = "账号或密码错误！";
-            result = false;
+            response.setRt(ErrMsg.FAIL_CODE);
+            response.setErrmsg(ErrMsg.SUCC);
         }
-        setAttr("result", result);
-        setAttr("msg", msg);
-        renderJson();
+
+        renderJson(JSON.toJSONString(response));
     }
+
 
     private boolean checkLogin(String username, String password) {
         List<Record> admin = Db.find("select * from user");
