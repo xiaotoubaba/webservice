@@ -15,4 +15,16 @@ function tm_centerdialog() {
 		left : left,
 		top : top
 	});
+
+    //创建一个对象
+    function User(username, password){
+        this.username = username;
+        this.password = password;
+        this.getUsername = function(){
+            return this.username;
+        }
+        this.getPassword = function(){
+            return this.password;
+        }
+    }
 }

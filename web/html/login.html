@@ -79,7 +79,9 @@
 
         document.getElementById("submit").value = "登陆中...";
 
-        var param={"username":username,"password":password};
+        var user={"username":username,"password":hex_md5(password)};
+
+        var param={"method":"login","param":user};
         $.ajax({
             type: "post",
             url: "../login/login",

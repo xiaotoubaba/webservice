@@ -5,6 +5,7 @@ import com.alibaba.fastjson.TypeReference;
 import com.app.application.entity.ErrMsg;
 import com.app.application.res.Response;
 import com.app.request.req.LoginReq;
+import com.app.request.req.LoginReq2;
 import com.app.request.res.LoginRes;
 import com.jfinal.core.Controller;
 import com.jfinal.kit.HttpKit;
@@ -17,23 +18,23 @@ import java.util.List;
  */
 public class LoginController extends Controller {
 
+
     // 登录验证
     public void login() {
-        LoginReq req = JSON.parseObject(HttpKit.readData(getRequest()), new TypeReference<LoginReq>(){});
+        LoginReq2 req = JSON.parseObject(HttpKit.readData(getRequest()), new TypeReference<LoginReq2>(){});
         Response<LoginRes> response = new Response();
-        if (checkLogin(req.getUsername(), req.getPassword())) {
+        if (checkLogin(req.getParam().getUsername(), req.getParam().getPassword())) {
 
             response.setRt(ErrMsg.SUCC_CODE);
             response.setErrmsg(ErrMsg.SUCC);
             LoginRes res = new LoginRes();
-            res.setUsername(req.getUsername());
-            res.setPassword(req.getPassword());
+            res.setUsername(req.getParam().getUsername());
+            res.setPassword(req.getParam().getPassword());
             response.setParam(res);
         } else {
             response.setRt(ErrMsg.FAIL_CODE);
             response.setErrmsg(ErrMsg.SUCC);
         }
-
         renderJson(JSON.toJSONString(response));
     }
 
