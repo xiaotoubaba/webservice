@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by Yale on 2017/5/8.
  */
-public class LoginController extends Controller {
+public class AccountController extends Controller {
 
 
     // 登录验证

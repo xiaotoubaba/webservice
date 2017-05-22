@@ -59,6 +59,7 @@
     <p>Copyright (C)2015 Water</p>
 </div>
 <script type="text/javascript" src="../js/Login.js"></script>
+<script type="text/javascript" src="../js/global.js"></script>
 <script type="text/javascript">
     function login() {
         var username = $("#username").val();
@@ -79,12 +80,12 @@
 
         document.getElementById("submit").value = "登陆中...";
 
-        var user={"username":username,"password":hex_md5(password)};
+        var user={"username":username,"password":hex_md5(password+md5Salt)};
 
         var param={"method":"login","param":user};
         $.ajax({
             type: "post",
-            url: "../login/login",
+            url: "../account/login",
             contentType: "application/json;charset=utf-8",
             data:JSON.stringify(param),
             dataType: "json",
